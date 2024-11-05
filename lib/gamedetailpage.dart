@@ -4,12 +4,14 @@ class GameDetailPage extends StatelessWidget {
   final String title;
   final String imagePath;
   final String description;
+  final Function() onTap;
 
   const GameDetailPage({
     super.key,
     required this.title,
     required this.imagePath,
     required this.description,
+    required this.onTap,
   });
 
   @override
@@ -45,7 +47,8 @@ class GameDetailPage extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: ElevatedButton(
               onPressed: () {
-                // TODO: Implement game start logic
+                onTap();
+                print("object");
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue,

@@ -5,12 +5,14 @@ class GameCard extends StatelessWidget {
   final String title;
   final String imagePath;
   final String description;
+  final Function() onTap;
 
   const GameCard({
     super.key,
     required this.title,
     required this.imagePath,
     required this.description,
+    required this.onTap,
   });
 
   @override
@@ -24,6 +26,9 @@ class GameCard extends StatelessWidget {
               title: title,
               imagePath: imagePath,
               description: description,
+              onTap: () {
+                onTap();
+              },
             ),
           ),
         );
