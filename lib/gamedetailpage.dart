@@ -57,9 +57,9 @@ class GameDetailPage extends StatelessWidget {
                 ),
                 padding: const EdgeInsets.symmetric(vertical: 16),
               ),
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Padding(
                     padding: EdgeInsets.only(left: 12.0),
                     child: Text(
